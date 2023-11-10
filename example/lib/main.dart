@@ -31,23 +31,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final String videoPlayUrl = 'https://assets.mixkit.co/videos/preview/mixkit-girl-dancing-happily-in-a-field-of-flowers-4702-large.mp4';
+  final String videoPlayUrl =
+      'https://assets.mixkit.co/videos/preview/mixkit-girl-dancing-happily-in-a-field-of-flowers-4702-large.mp4';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: SizedBox(
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Center(
+            child: SizedBox(
           height: 250.0,
           child: VideoPlayerWithControls(
-            videoUrl: videoPlayUrl,
-            skipVideoUptoSec: 8
-          ),
-        )
-      )
-    );
+              videoUrl: videoPlayUrl, skipVideoUptoSec: 8),
+        )));
   }
 }
