@@ -28,7 +28,7 @@ dependencies:
 
 Import the package in your Dart code.
 
-```
+```dart
 import 'package:video_player_with_controls/video_player_with_controls.dart';
 
 ```
