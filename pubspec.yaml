@@ -1,7 +1,7 @@
 name: video_player_with_controls
-description: A new Flutter package project.
+description: Added easy controls over video_plyer.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Trend74X/Video-Player-With-Controls
 
 environment:
   sdk: '>=2.19.4 <3.0.0'

@@ -1,3 +1,4 @@
-## 0.0.1
+## [0.0.1] - 2023-11-10
 
-* TODO: Describe initial release.
+* Initial release of the app.
+* Added simple controls 

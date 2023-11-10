@@ -1,39 +1,58 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# video_player_with_controls
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+`video_player_with_controls` is a Dart package that provides an enhanced video player with additional controls and features for Flutter applications.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Play/Pause functionality
+- Display of video played duration and total duration
+- Fullscreen support
+- Automatic hiding of controls after 3 seconds of inactivity
+- Customizable skip functionality to move forward or backward by a specified number of seconds
 
-## Getting started
+## Screenshots
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+![](images/initial.JPEG)
+![](images/playing.JPEG)
+![](images/fullscreen.JPEG)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use this package, add `video_player_with_controls` as a dependency in your `pubspec.yaml` file.
 
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  video_player_with_controls: ^1.0.0
 ```
 
-## Additional information
+Import the package in your Dart code.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```
+import 'package:video_player_with_controls/video_player_with_controls.dart';
+
+```
+
+Then add the code snippet below
+
+```dart
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('https://assets.mixkit.co/videos/preview/mixkit-girl-dancing-happily-in-a-field-of-flowers-4702-large.mp4'),
+      ),
+      body: Center(
+        child: SizedBox(
+          height: 250.0,
+          child: VideoPlayerWithControls(
+            videoUrl: videoPlayUrl,
+            skipVideoUptoSec: 8
+          ),
+        )
+      )
+    );
+  }
+  ```
+
+  Hope you enjoy!!!
