@@ -40,13 +40,13 @@ Then add the code snippet below
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('https://assets.mixkit.co/videos/preview/mixkit-girl-dancing-happily-in-a-field-of-flowers-4702-large.mp4'),
+        title: Text('Video PLayer With Controls),
       ),
       body: Center(
         child: SizedBox(
           height: 250.0,
           child: VideoPlayerWithControls(
-            videoUrl: videoPlayUrl,
+            videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-girl-dancing-happily-in-a-field-of-flowers-4702-large.mp4',
             skipVideoUptoSec: 8
           ),
         )
